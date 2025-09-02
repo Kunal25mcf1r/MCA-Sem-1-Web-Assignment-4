@@ -1,0 +1,232 @@
+<html>
+<style>
+    table{
+    width: 600;
+    background-color: #eeebd0;
+    font-weight: bold;
+}
+td{
+    padding:10px;
+}
+form{
+    padding-left: 5%;
+    background-color: aliceblue;
+}
+
+
+</style>
+<form>
+
+    <h1>Complex Registration Form</h1>
+    <table border="3">
+        <tr>
+            <th colspan="2" bgcolor="#fdc8d1">
+                <h1> Personal Details</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label for="fname">First Name *</label>
+
+            </td>
+            <td>
+                <input type="text" name="fname" required>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <label for="lname">Last Name *</label>
+            </td>
+            <td>
+                <input type="text" name="lname" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email *</label>
+
+            </td>
+            <td>
+                <input type="email" name="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="phone">Phone Number</label>
+
+            </td>
+            <td>
+                <input type="number" name="phone" maxlength="10">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2" bgcolor="#fdc8d1">
+                <h1> Account Details</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label for="username">Username *</label>
+
+            </td>
+            <td>
+                <input type="text" name="username" minlength="5" maxlength="15" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password *</label>
+
+            </td>
+            <td>
+                <input type="password" name="password" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="confirmpassword">Confirm Password *</label>
+
+            </td>
+            <td>
+                <input type="password" name="confirmpassword" required>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2" bgcolor="#fdc8d1">
+                <h1> Address</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label for="address1">Addresses Line 1 *</label>
+
+            </td>
+            <td>
+                <input type="text" name="address1" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address2">Addresses Line 2</label>
+            </td>
+            <td>
+                <input type="text" name="address2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="confirmpassword">Confirm Password*</label>
+
+            </td>
+            <td>
+                <input type="password" name="confirmpassword" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="city">City *</label>
+
+            </td>
+            <td>
+                <input type="text" name="city" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="state">State :</label>
+
+            </td>
+            <td>
+                <select name="state">
+                    <option selected>Select State</option>
+                    <option value="Chattisgarh">Chattisgarh</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Haryana">Haryana</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="zipcode">Zipcode *</label>
+
+            </td>
+            <td>
+                <input type="number" name="zipcode" required>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2" bgcolor="#fdc8d1">
+                <h1> Preferences</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Gender *</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <input type="radio" name="gender" value="Other">Other
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="subscribenews">Subscribe Newsletter</label>
+            </td>
+            <td>
+                <input type="checkbox" name="subscribenews">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="bio">Short Bio</label>
+
+            </td>
+            <td>
+                <textarea rows="5" cols="30" name="bio" placeholder="Tell us about yourself"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="checkbox" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions *</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" name="reset">
+                <input type="submit" name="submit">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>Terms and Conditions</h1>
+    <iframe  width="600" height="250" srcdoc="<p><h2>Terms and Conditions</h2>
+        <p>
+            Welcome to our registration portal.By registering,you agree to the folowing terms and condition:<br>
+            <ul>
+                <li>
+                    You must provide accurate and complete information.
+                </li>
+                <li>
+                    Your password must be kept confidential.
+                </li>
+                <li>
+                    We reserve the right to cancel accounts that voilates our policy.
+                </li>
+                <li>
+                    All data is processed according to our privacy policy.
+                </li>
+                <li>
+                    Use the form responsibly.
+                </li>
+            </ul>
+        </p></p>">
+      </iframe>
+</form>
+
+</html>
